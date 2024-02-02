@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{florida}
+{Timothy A. Davis} and {Yifan Hu}.
+\newblock The university of florida sparse matrix collection.
+\newblock {\em ACM Transactions on Mathematical Software}, Vol.~38, No.~1, pp.
+  1--25, 12 2011.
+\newblock \url{https://sparse.tamu.edu/}.
+
+\bibitem{meinronbun}
+{Hang CUI}, {Shoichi HIRASAWA}, {Hiroaki KOBAYASHI}, and {Hiroyuki TAKIZAWA}.
+\newblock {A Machine Learning-Based Approach for Selecting SpMV Kernels and
+  Matrix Storage Formats}.
+\newblock {\em IEICE TRANS. INF. SYST}, No.~9, pp. 2307--2314, 9 2018.
+
+\end{thebibliography}

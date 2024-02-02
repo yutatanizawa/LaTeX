@@ -1,0 +1,67 @@
+\documentclass[a4paper,oneside,twocolumn,notitlepage,dvipdfmx]{jsarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{sample}
+\usepackage{url}
+\usepackage{listings,jlisting}
+\setlength\abovecaptionskip{1pt}
+\def\baselinestretch{0.3}
+
+
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
+% 以下内容
+
+\student{谷澤　悠太}
+\date{令和4年7月7日}
+\prof{滝沢　寛之}
+\title{Latex講習会}
+%\author{Maohua Zhu, Tao Zhang, Zhenyu Gu, Yuan Xie}
+%\journal{MICRO-52, October 12-16, 2019, Columbus, OH, USA}
+\nendo{令和4年度}
+
+\begin{document}
+\maketitle
+\section{Latexの使い方}
+B3の子は始めてLatexを使用するのは研修2です。\par
+\subsection{数式}
+\subsubsection{文章中に挿入}
+
+\subsubsection{数式を参照}
+
+\subsection{図}
+図は以下のように示します。\par
+
+\subsection{表}
+表は以下のように示します。\par
+
+\subsection{ソースコード}
+
+\subsection{参考文献}
+参考文献は\cite{florida}と書きます。
+複数の参考文献を同時に出す場合は\cite{florida,meinronbun}と書きます。
+\bibliographystyle{junsrt}
+\bibliography{refer}
+\end{document}

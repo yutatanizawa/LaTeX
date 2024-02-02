@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{citation_2}
+{David E. Hudak}, {Thomas Bitterman}, {Patricia Carey}, {Douglas Johnson},
+  {Eric Franz}, {Shaun Brady}, and {Piyush Diwan}.
+\newblock \uppercase{OSC} \uppercase{O}n\uppercase{D}emand: \uppercase{A}
+  \uppercase{W}eb \uppercase{P}latform \uppercase{I}ntegrating
+  \uppercase{A}ccess to \uppercase{HPC} \uppercase{S}ystems, \uppercase{W}eb
+  and \uppercase{VNC} \uppercase{A}pplications.
+\newblock {\em XSEDE '13}, No.~49, pp. 1--6, 7 2013.
+
+\bibitem{citation_3}
+{Robert Settlage}, {Eric Franz}, {Doug Johnson}, {Steve Gallo}, {Edgar Moore},
+  and {David Hudak}.
+\newblock \uppercase{O}pen \uppercase{O}n\uppercase{D}emand: \uppercase{HPC}
+  for \uppercase{E}veryone.
+\newblock {\em ISC 2019 Workshops}, No. 11887, pp. 504--513, 12 2019.
+
+\bibitem{citation_1}
+{Masahiro Nakao}, {Masaru Nagaku}, {Shinichi Miura}, {Hidetomo Kaneyama}, {Ikki
+  Fujiwara}, {Keiji Yamamoto}, and {Atsuko Takefusa}.
+\newblock Introducing \uppercase{O}pen \uppercase{O}n\uppercase{D}emand to
+  \uppercase{S}upercomputer \uppercase{F}ugaku.
+\newblock {\em SC-W 2023}, No.~1, pp. 720--727, 11 2023.
+
+\bibitem{citation_6}
+{Mihael Hategan-Marandiuc}, {Andre Merzky}, {Nicholson Collier}, {Ketan
+  Maheshwari}, {Jonathan Ozik}, {Matteo Turilli}, {Andreas Wilke}, {Justin M.
+  Wozniak}, {Kyle Chard}, {Ian Foster}, {Rafael Ferreira da Silva}, {Shantenu
+  Jha}, and {Daniel Laney}.
+\newblock \uppercase{PSI/J} : \uppercase{A} \uppercase{P}ortable
+  \uppercase{I}nterface for \uppercase{S}ubmitting, \uppercase{M}onitoring, and
+  \uppercase{M}anaging \uppercase{J}obs.
+\newblock {\em IEEE 19th International Conference on e-Science}, 2023.
+
+\end{thebibliography}

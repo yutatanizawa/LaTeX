@@ -1,0 +1,51 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: preprint.aux
+The style file: junsrt.bst
+Database file #1: refer.bib
+Warning--there's a number but no volume in citation_2
+Warning--there's a number but no volume in citation_3
+Warning--there's a number but no volume in citation_1
+You've used 4 entries,
+            2270 wiz_defined-function locations,
+            565 strings with 5501 characters,
+and the built_in function-call counts, 1707 in all, are:
+= -- 105
+> -- 103
+< -- 6
++ -- 37
+- -- 33
+* -- 122
+:= -- 235
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 85
+empty$ -- 126
+format.name$ -- 66
+if$ -- 403
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 17
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 71
+stack$ -- 0
+substring$ -- 68
+swap$ -- 30
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 10
+width$ -- 5
+write$ -- 45
+is.kanji.str$ -- 68
+(There were 3 warnings)

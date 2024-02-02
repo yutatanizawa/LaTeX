@@ -1,0 +1,196 @@
+\typeout{Document Style Option `kenshu2' for XX N 年度機械・知能航空研修II}
+\usepackage{tabularx}
+
+\twocolumn
+\sloppy
+\flushbottom
+\setlength{\parindent}{1em}
+\setlength{\leftmargini}{2em}
+\setlength{\leftmarginv}{.5em}
+\setlength{\leftmarginvi}{.5em}
+\setlength{\oddsidemargin}{-5.4mm}
+\setlength{\evensidemargin}{-5.4mm}
+\setlength{\topmargin}{-2mm}
+\setlength{\headheight}{0mm}
+\setlength{\headsep}{0mm}
+\setlength{\topskip}{0mm}
+\setlength{\textheight}{250mm}
+\setlength{\textwidth}{170mm}
+\setlength{\columnsep}{10mm}
+
+% texthwight is set to 46 lines 
+%\setlength{\textheight}{45\baselineskip}
+%\addtolength{\textheight}{\topskip}
+
+\pagestyle{empty}
+\def\abst#1{\gdef\@abst{#1}}
+\def\keywords#1{\gdef\@keywords{#1}}
+\def\prof#1{\gdef\@prof{#1}}
+\def\asoprof#1{\gdef\@asoprof{#1}}
+\def\student#1{\gdef\@student{#1}}
+\def\journal#1{\gdef\@journal{#1}}
+\def\nendo#1{\gdef\@nendo{#1}}
+
+\def\@maketitle{\newpage
+\null
+{\noindent
+  {\large \hspace{25mm}\@nendo\hspace{9zw}卒業研究前刷\hspace{1zw}\hspace{25mm}\@date } 
+  \begin{large}
+    \begin{center}
+      \vskip 1em
+%      \vskip 1.5em
+      \begin{flushright}
+	\begin{tabular}{ll@{}}   
+          担当学生 & \@student\\
+          指導教員 & \@prof~教授
+	\end{tabular}
+      \end{flushright}
+    \end{center}
+%   \vskip 1.5em
+   \vskip 1em
+  \begin{tabularx}{160mm}{lX@{}}   
+     \hspace{18mm}題　目:& \@title\\
+    %  \hspace{18mm}著　者:& \@author\\
+    %  \hspace{18mm}雑誌名:& \@journal\\
+  \end{tabularx}
+   \vskip 2em
+  \end{large}
+  }
+\def\abstname{{\bf Abstract}:\ }
+\@ifundefined{@abst}{}{
+  {\normalsize
+    \begin{list}{\abstname}{
+        \setlength{\topsep}{0pt}
+        \setlength{\partopsep}{0pt}
+        \setlength{\parsep}{0pt}
+        \setlength{\baselineskip}{4.25mm}
+        \setlength{\leftmargin}{0.05\textwidth}
+        \setlength{\rightmargin}{0.05\textwidth}
+        \setlength{\itemindent}{0.05\textwidth}
+        \setlength{\listparindent}{0mm}
+        \setlength{\labelsep}{0pt}
+        }
+    \item\@abst
+      \vskip \baselineskip
+      \def\keywordsname{{\bf Key Words}:\ }
+      \@ifundefined{@keywords}{}{
+        \begin{list}{\keywordsname}{
+            \setlength{\topsep}{0pt}
+            \setlength{\parsep}{0pt}
+            \setlength{\partopsep}{0pt}
+            \setlength{\listparindent}{0mm}
+            \setlength{\baselineskip}{4.25mm}
+            \settowidth{\labelwidth}{\keywordsname}
+            \setlength{\labelsep}{0pt}
+            \settowidth{\leftmargin}{\keywordsname}
+            \setlength{\rightmargin}{0mm}
+            }
+        \item\@keywords
+        \end{list}}
+    \end{list}
+    \gdef\@abst{}}}
+\vskip \baselineskip
+}
+
+\def\section{\@startsection {section}{1}{\z@}{1.2ex plus 1ex minus 
+ .2ex}{.4ex plus .1ex}{\large\bf}}
+\def\subsection{\@startsection{subsection}{2}{\z@}{3.25ex plus 1ex minus 
+ .2ex}{.4ex plus .1ex}{\normalsize\bf}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{3.25ex plus
+ 1ex minus .2ex}{.4ex plus .1ex}{\normalsize\bf}}
+\def\paragraph{\@startsection
+ {paragraph}{4}{\z@}{.5ex plus .1ex minus .1ex}{-1em}{\normalsize\bf}}
+\def\subparagraph{\@startsection
+ {subparagraph}{4}{\parindent}{3.25ex plus 1ex minus 
+ .2ex}{-1em}{\normalsize\bf}}
+\def\@sect#1#2#3#4#5#6[#7]#8{\ifnum #2>\c@secnumdepth
+     \def\@svsec{}\else 
+     \refstepcounter{#1}\edef\@svsec{\csname the#1\endcsname.\hskip .5em }\fi
+     \@tempskipa #5\relax
+      \ifdim \@tempskipa>\z@ 
+        \begingroup #6\relax
+          \@hangfrom{\hskip #3\relax\@svsec}{\interlinepenalty \@M #8\par}%
+        \endgroup
+       \csname #1mark\endcsname{#7}\addcontentsline
+         {toc}{#1}{\ifnum #2>\c@secnumdepth \else
+                      \protect\numberline{\csname the#1\endcsname}\fi
+                    #7}\else
+        \def\@svsechd{#6\hskip #3\@svsec #8\csname #1mark\endcsname
+                      {#7}\addcontentsline
+                           {toc}{#1}{\ifnum #2>\c@secnumdepth \else
+                             \protect\numberline{\csname the#1\endcsname}\fi
+                       #7}}\fi
+     \@xsect{#5}}
+
+\long\def\@makecaption#1#2{
+ \vskip 10pt 
+ \setbox\@tempboxa\hbox{#1. #2}
+ \ifdim \wd\@tempboxa >\hsize #1. #2\par \else \hbox
+to\hsize{\hfil\box\@tempboxa\hfil} 
+ \fi}
+\def\topfraction{0.99}
+\def\bottomfraction{0.99}
+\def\textfraction{0.01}
+\def\floatpagefraction{0.99}
+\def\dbltopfraction{0.99}
+\def\dblfloatpagefraction{0.99}
+\floatsep .5\floatsep
+\textfloatsep .5\textfloatsep
+\intextsep .5\intextsep
+\dblfloatsep .5\dblfloatsep
+\dbltextfloatsep .5\dbltextfloatsep
+
+\def\thebibliography#1{\section*{参考文献\markboth
+ {参 考 文 献}{参 考 文 献}}\list
+ {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+ \advance\leftmargin\labelsep
+ \usecounter{enumi}}\small\itemsep=.1ex\parskip=.1ex
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax}
+
+\newif\ifBoldMath
+        \BoldMathtrue
+\lineskip 1pt \normallineskip 1pt
+\def\baselinestretch{0.92}
+
+\newdimen\h
+\h=0.25mm
+\newdimen\Q % for SK fonts
+\Q=0.7392507pt
+\newdimen\EQ % for SE fonts
+\EQ=0.71144pt
+\newdimen\@bs
+\@bs=18.5\h
+
+%%      normalsize-->10pt 12Q 18.5H
+\def\@normalsize{\@setsize\normalsize{18.5\h}\ixpt\@ixpt
+\abovedisplayskip 10pt plus3pt minus4pt\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus2.5pt\belowdisplayshortskip 5pt plus2pt
+minus2pt\let\@listi\@listI}
+\def\normalsize{\ifx\@currsize\normalsize \rm\else \@normalsize\fi}
+%\def\normalsize{\ifx\@currsize\normalsize \rm\ninmin\else \@normalsize\fi}
+%       small-->8pt 11Q 13.5H
+\def\small{\@setsize\small{14\h}\viiipt\@viiipt
+\abovedisplayskip 8.5pt plus 3pt minus 4pt\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus2pt\belowdisplayshortskip 4pt plus2pt minus 2pt
+\def\@listi{\leftmargin\leftmargini \topsep 4pt plus 2pt minus 2pt\parsep 2pt
+plus 1pt minus 1pt
+\itemsep \parsep}}
+%       footnotesize-->6pt 10Q 13H
+\def\footnotesize{\@setsize\footnotesize{13\h}\viipt\@viipt
+\abovedisplayskip 6pt plus 2pt minus 4pt\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus 1pt\belowdisplayshortskip 3pt plus 1pt minus
+2pt
+\def\@listi{\leftmargin\leftmargini \topsep 3pt plus 1pt minus 1pt\parsep 2pt
+plus 1pt minus 1pt
+\itemsep \parsep}}
+\def\scriptsize{\@setsize\scriptsize{8pt}\viipt\@viipt}
+\def\tiny{\@setsize\tiny{6pt}\vpt\@vpt}
+\def\large{\@setsize\large{12pt}\xipt\@xipt}
+\def\Large{\@setsize\Large{14.4pt}\xiipt\@xiipt}
+\def\LARGE{\@setsize\LARGE{22pt}\xviipt\@xviipt}
+\def\huge{\@setsize\huge{25pt}\xxpt\@xxpt}
+\def\Huge{\@setsize\Huge{30pt}\xxvpt\@xxvpt}
+\normalsize
+

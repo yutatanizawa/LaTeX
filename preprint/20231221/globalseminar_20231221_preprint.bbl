@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{citation_3}
+{Robert Settlage}, {Eric Franz}, {Doug Johnson}, {Steve Gallo}, {Edgar Moore},
+  and {David Hudak}.
+\newblock \uppercase{O}pen \uppercase{O}n\uppercase{D}emand: \uppercase{HPC}
+  for \uppercase{E}veryone.
+\newblock {\em ISC 2019 Workshops}, No. 11887, pp. 504--513, 12 2019.
+
+\bibitem{citation_4}
+\uppercase{O}pen\uppercase{O}n\uppercase{D}emand 3.0.3
+  \uppercase{D}ocuentation.
+\newblock {\em https://osc.github.io/ood-documentation/latest/}.
+
+\bibitem{citation_5}
+\lowercase{i}nstall \uppercase{O}pen \uppercase{O}n\uppercase{D}emand |
+  \uppercase{O}pen \uppercase{O}n\uppercase{D}emand.
+\newblock {\em https://openondemand.org/install-open-ondemand}.
+
+\bibitem{citation_1}
+{Masahiro Nakao}, {Masaru Nagaku}, {Shinichi Miura}, {Hidetomo Kaneyama}, {Ikki
+  Fujiwara}, {Keiji Yamamoto}, and {Atsuko Takefusa}.
+\newblock Introducing \uppercase{O}pen \uppercase{O}n\uppercase{D}emand to
+  \uppercase{S}upercomputer \uppercase{F}ugaku.
+\newblock {\em SC-W 2023}, No.~1, pp. 720--727, 11 2023.
+
+\end{thebibliography}
