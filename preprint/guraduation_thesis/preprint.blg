@@ -4,48 +4,47 @@ The top-level auxiliary file: preprint.aux
 The style file: junsrt.bst
 Database file #1: refer.bib
 Warning--there's a number but no volume in citation_2
-Warning--there's a number but no volume in citation_3
 Warning--there's a number but no volume in citation_1
-You've used 4 entries,
+You've used 3 entries,
             2270 wiz_defined-function locations,
-            565 strings with 5501 characters,
-and the built_in function-call counts, 1707 in all, are:
-= -- 105
-> -- 103
-< -- 6
-+ -- 37
-- -- 33
-* -- 122
-:= -- 235
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 4
+            557 strings with 5256 characters,
+and the built_in function-call counts, 1254 in all, are:
+= -- 71
+> -- 84
+< -- 4
++ -- 30
+- -- 27
+* -- 91
+:= -- 180
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 85
-empty$ -- 126
-format.name$ -- 66
-if$ -- 403
+cite$ -- 5
+duplicate$ -- 60
+empty$ -- 89
+format.name$ -- 54
+if$ -- 291
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 4
-newline$ -- 23
-num.names$ -- 4
-pop$ -- 17
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 3
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 71
+skip$ -- 49
 stack$ -- 0
-substring$ -- 68
-swap$ -- 30
-text.length$ -- 6
+substring$ -- 40
+swap$ -- 19
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 10
-width$ -- 5
-write$ -- 45
-is.kanji.str$ -- 68
-(There were 3 warnings)
+warning$ -- 2
+while$ -- 7
+width$ -- 4
+write$ -- 34
+is.kanji.str$ -- 53
+(There were 2 warnings)

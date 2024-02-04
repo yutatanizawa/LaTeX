@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  4 FEB 2024 15:38
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  4 FEB 2024 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,23 +295,23 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <8> not available
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 7.68799pt on input line 10.
 
-Underfull \hbox (badness 3989) in paragraph at lines 20--25
+Underfull \hbox (badness 3989) in paragraph at lines 13--18
 []\OT1/cmr/m/n/8 Masahiro Nakao, Masaru Na-gaku, Shinichi Miura,
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 27--35
+Underfull \hbox (badness 1983) in paragraph at lines 20--28
 \OT1/cmr/m/n/8 Col-lier, Ke-tan Ma-hesh-wari, Jonathan Ozik, Mat-teo
  []
 
 ) [2] (./preprint.aux) ) 
 Here is how much of TeX's memory you used:
- 4266 strings out of 478741
- 63210 string characters out of 5860982
- 377174 words of memory out of 5000000
- 22641 multiletter control sequences out of 15000+600000
+ 4265 strings out of 478741
+ 63198 string characters out of 5860982
+ 377162 words of memory out of 5000000
+ 22640 multiletter control sequences out of 15000+600000
  481104 words of font info for 82 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  55i,10n,62p,1348b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on preprint.dvi (2 pages, 22032 bytes).
+Output written on preprint.dvi (2 pages, 22464 bytes).
