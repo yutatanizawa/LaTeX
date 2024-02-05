@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  5 FEB 2024 11:55
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  5 FEB 2024 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -508,10 +508,10 @@ Underfull \hbox (badness 1983) in paragraph at lines 20--28
 Here is how much of TeX's memory you used:
  13281 strings out of 478741
  248810 string characters out of 5860982
- 540985 words of memory out of 5000000
+ 539934 words of memory out of 5000000
  31444 multiletter control sequences out of 15000+600000
  481104 words of font info for 82 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 105i,10n,106p,1338b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,10n,106p,1333b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on preprint.dvi (2 pages, 22204 bytes).
+Output written on preprint.dvi (2 pages, 22252 bytes).
