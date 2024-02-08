@@ -1,0 +1,111 @@
+%!TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  平成29年度 卒業論文 Ver.1.0
+%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%% OPTION %%%%%%%%%
+% 想定コンパイラ platex
+% 言語 日本語
+% 用紙サイズA4
+% 文字サイズ12pt
+% 段組み 1段組み
+% dvi->pdf chainを想定 
+% ps->pdf chainならdvipsを指定すること
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,onecolumn,dvipdfmx]{jsarticle}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{listings} %コード内に日本語を使う場合はjlisting.styが必要
+\usepackage{url}
+\usepackage{here}
+\usepackage{color}
+\newcommand{\diff}[1]{\textcolor{red}{#1}}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{bm}
+\usepackage{comment}
+\usepackage[subrefformat=parens]{subcaption}
+\setlength{\oddsidemargin}{-0.4truemm}   % 25.4 - 0.4 = 25mm
+\setlength{\evensidemargin}{-0.4truemm}
+\setlength{\textwidth}{160truemm}        % 210 - 25 - 25 = 160mm
+\setlength{\topmargin}{-5.4truemm}       % 25.4 - 5.4 = 20mm
+\setlength{\headheight}{0mm}
+\setlength{\headsep}{0mm}
+\setlength{\textheight}{252truemm}       % 297 - 20 - 25 = 252mm
+\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\thesection}{第\arabic{section}章}
+
+\renewcommand{\lstlistingname}{コード}
+\renewcommand{\lstlistlistingname}{コード目次}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Fortanのlstset例
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{language=Python,
+	basicstyle=\footnotesize,
+	commentstyle=\textit,
+	classoffset=1,
+	keywordstyle=\bfseries,
+	frame=tRBI,framesep=5pt,
+	showstringspaces=false,
+	numbers=left,stepnumber=1,numberstyle=\footnotesize,
+	escapeinside={(@}{@)}
+	}
+\lstdefinestyle{top}{
+	float=t,
+	floatplacement=t
+	}
+\lstdefinestyle{bottom}{
+	float=b,
+	floatplacement=b
+	}
+
+
+%%%%%%%%% TEXT MAIN %%%%%%%%%
+
+\begin{document}
+	\begin{titlepage}
+	\vspace*{3zw}
+	\Large{東北大学工学部　卒業論文} \par
+	\vspace*{5zw}
+		\begin{center}
+		  \huge{\textbf{\underline{ウェブインタフェースを介した}}} \par
+		  \huge{\textbf{\underline{スーパコンピュータ利用環境に関する研究}}} \par
+		  \vspace*{10zw}
+		  \Large{\underline{機械知能・航空工学科　滝沢研究室}} \par
+		  \vspace*{3zw}
+		  \Large{\underline{谷澤悠太}} \par
+		  \Large{（令和6年3月）} \par
+		\end{center}
+	\end{titlepage}
+	
+	\pagenumbering{roman}
+
+	\setcounter{tocdepth}{3}
+	\tableofcontents%目次
+	\clearpage%ページのつなぎ目
+	\listoffigures%図目次
+	\listoftables%表目次
+	\lstlistoflistings
+	\clearpage
+	\pagenumbering{arabic}
+	\include{Chap1/Chap1}
+	\include{Chap2/Chap2}
+	\include{Chap3/Chap3}
+	\include{Chap4/Chap4}
+	\include{Chap5/Chap5}
+
+	\addcontentsline{toc}{section}{\bibname}
+	\bibliographystyle{junsrt}
+	\bibliography{bibpaper}
+	\include{Thank}
+
+\end{document}
