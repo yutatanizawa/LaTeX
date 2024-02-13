@@ -1,9 +1,10 @@
 \begin{thebibliography}{1}
 
-\bibitem{meinronbun}
-{Hang CUI}, {Shoichi HIRASAWA}, {Hiroaki KOBAYASHI}, and {Hiroyuki TAKIZAWA}.
-\newblock {A Machine Learning-Based Approach for Selecting SpMV Kernels and
-  Matrix Storage Formats}.
+\bibitem{cite1}
+{Ping Luo}, {Benjamin Evans}, {Tyler Trafford}, {Kaylea Nelson}, {Thomas J.
+  Langford}, {Jay Kubeck}, and {Andrew Sherman}.
+\newblock {Using Single Sign-On Authentication with Multiple Open OnDemand
+  Accounts: A Solution for HPC Hosted Courses.}
 \newblock {\em IEICE TRANS. INF. SYST}, No.~9, pp. 2307--2314, 9 2018.
 
 \end{thebibliography}
