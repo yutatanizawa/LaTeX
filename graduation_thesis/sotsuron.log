@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  19 FEB 2024 10:55
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  19 FEB 2024 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,28 +355,38 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 ]) [2]
 \openout2 = `Chap2/Chap2.aux'.
 
- (./Chap2/Chap2.tex) [3
+ (./Chap2/Chap2.tex
+File: ./fig/HPCsystem.png Graphic file (type bmp)
+<./fig/HPCsystem.png>
+ [3
 
 
 
-]
+] [4]
+File: ./fig/dashboard.png Graphic file (type bmp)
+<./fig/dashboard.png>
+File: ./fig/homedirectory.png Graphic file (type bmp)
+<./fig/homedirectory.png>
+File: ./fig/jobcomposer.png Graphic file (type bmp)
+<./fig/jobcomposer.png>
+ [5]) [6]
 \openout2 = `Chap3/Chap3.aux'.
 
- (./Chap3/Chap3.tex) [4
+ (./Chap3/Chap3.tex) [7
 
 
 
 ]
 \openout2 = `Chap4/Chap4.aux'.
 
- (./Chap4/Chap4.tex) [5
+ (./Chap4/Chap4.tex) [8
 
 
 
 ]
 \openout2 = `Chap5/Chap5.aux'.
 
- (./Chap5/Chap5.tex) [6
+ (./Chap5/Chap5.tex) [9
 
 
 
@@ -389,22 +399,22 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 8.
-) [7
+) [10
 
 
 ]
 \openout2 = `Thank.aux'.
 
- (./Thank.tex) [8
+ (./Thank.tex) [11
 
 ] (./sotsuron.aux (./Chap1/Chap1.aux) (./Chap2/Chap2.aux) (./Chap3/Chap3.aux) (./Chap4/Chap4.aux) (./Chap5/Chap5.aux) (./Thank.aux)) ) 
 Here is how much of TeX's memory you used:
- 6024 strings out of 478741
- 98141 string characters out of 5860982
+ 6061 strings out of 478741
+ 98829 string characters out of 5860982
  579552 words of memory out of 5000000
- 24317 multiletter control sequences out of 15000+600000
+ 24346 multiletter control sequences out of 15000+600000
  489443 words of font info for 116 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 67i,5n,77p,926b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,6n,77p,966b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (11 pages, 21260 bytes).
+Output written on sotsuron.dvi (14 pages, 32748 bytes).

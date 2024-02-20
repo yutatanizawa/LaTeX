@@ -7,4 +7,23 @@
   Accounts: A Solution for HPC Hosted Courses.}
 \newblock {\em IEICE TRANS. INF. SYST}, No.~9, pp. 2307--2314, 9 2018.
 
+\bibitem{cite2}
+{David E. Hudak}, {Thomas Bitterman}, {Patricia Carey}, {Douglas Johnson},
+  {Eric Franz}, {Shaun Brady}, and {Piyush Diwan}.
+\newblock {OSC OnDemand: A Web Platform Integrating Access to HPC Systems, Web
+  and VNC Applications.}
+\newblock {\em XSEDE '13,}, No.~49, pp. 1--6, 7 2013.
+
+\bibitem{cite3}
+{Robert Settlage}, {Eric Franz}, {Doug Johnson}, {Steve Gallo}, {Edgar Moore},
+  and {David Hudak}.
+\newblock {Open OnDemand: HPC for Everyone.}
+\newblock {\em ISC 2019 Workshops}, Vol. 11887, pp. 504--513, 12 2019.
+
+\bibitem{cite4}
+{Masahiro Nakao}, {Masaru Nagaku}, {Shinichi Miura}, {Hidetomo Kaneyama}, {Ikki
+  Fujiwara}, {Keiji Yamamoto}, and {Atsuko Takefusa}.
+\newblock {Introducing Open OnDemand to Supercomputer Fugaku.}
+\newblock {\em SC-W 2023}, pp. 720--727, 12 2023.
+
 \end{thebibliography}
