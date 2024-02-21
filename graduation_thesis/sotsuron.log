@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  20 FEB 2024 16:01
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  21 FEB 2024 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,17 +411,24 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
- [10]) [11]
+ [10] [11]) [12]
 \openout2 = `Chap4/Chap4.aux'.
 
- (./Chap4/Chap4.tex) [12
+ (./Chap4/Chap4.tex [13
 
 
 
 ]
+File: ./fig/ave_1-20.png Graphic file (type bmp)
+<./fig/ave_1-20.png>
+File: ./fig/ave_diff_1-20.png Graphic file (type bmp)
+<./fig/ave_diff_1-20.png>
+File: ./fig/100jobs.png Graphic file (type bmp)
+<./fig/100jobs.png>
+ [14]) [15]
 \openout2 = `Chap5/Chap5.aux'.
 
- (./Chap5/Chap5.tex) [13
+ (./Chap5/Chap5.tex) [16
 
 
 
@@ -434,22 +441,22 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 8.
-) [14
+) [17
 
 
 ]
 \openout2 = `Thank.aux'.
 
- (./Thank.tex) [15
+ (./Thank.tex) [18
 
 ] (./sotsuron.aux (./Chap1/Chap1.aux) (./Chap2/Chap2.aux) (./Chap3/Chap3.aux) (./Chap4/Chap4.aux) (./Chap5/Chap5.aux) (./Thank.aux)) ) 
 Here is how much of TeX's memory you used:
- 6574 strings out of 478741
- 103940 string characters out of 5860982
- 615552 words of memory out of 5000000
- 24846 multiletter control sequences out of 15000+600000
+ 6592 strings out of 478741
+ 104306 string characters out of 5860982
+ 616552 words of memory out of 5000000
+ 24861 multiletter control sequences out of 15000+600000
  490983 words of font info for 122 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  67i,6n,77p,1213b,1886s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (18 pages, 57328 bytes).
+Output written on sotsuron.dvi (21 pages, 69460 bytes).

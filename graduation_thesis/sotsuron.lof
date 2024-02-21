@@ -5,3 +5,6 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces 従来手法の模式図\relax }}{7}{}%
 \contentsline {figure}{\numberline {6}{\ignorespaces 提案手法の模式図\relax }}{8}{}%
 \contentsline {figure}{\numberline {7}{\ignorespaces 実装環境\relax }}{9}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces 機能分離前後でのターンアラウンドタイムの比較\relax }}{14}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces 実行時オーバーヘッドの差\relax }}{15}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces ジョブ数を増加した際のターンアラウンドタイムの比較\relax }}{15}{}%
