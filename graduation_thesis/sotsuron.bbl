@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{cite1}
 {Ping Luo}, {Benjamin Evans}, {Tyler Trafford}, {Kaylea Nelson}, {Thomas J.
@@ -34,5 +34,28 @@
 \newblock { PSI/J: A Portable Interface for Submitting, Monitoring, and
   Managing Jobs.}
 \newblock {\em IEEE 19th International Conference on e-Science}, 2023.
+
+\bibitem{cite7}
+{OpenOnDemand 3.0.3 Docuentation.}
+\newblock \url{https://osc.github.io/ood-documentation/latest/}.
+
+\bibitem{cite8}
+{install Open OnDemand | Open OnDemand.}
+\newblock \url{https://openondemand.org/install-open-ondemand}.
+
+\bibitem{cite9}
+{OSC/ood-core: Open OnDemand core library.}
+\newblock \url{https://github.com/OSC/ood_core}.
+
+\bibitem{cite10}
+{ExaWorks/psij-python: psij-python library.}
+\newblock \url{https://github.com/ExaWorks/psij-python}.
+
+\bibitem{cite6}
+{S. Nyamathulla}, {Dr. P. Ratnababu}, {Nazma Sultana Shaik}, and {Bhagya
+  Lakshmi. N}.
+\newblock {A Review on Selenium Web Driver with Python}.
+\newblock {\em Annals of the Romanian Society for Cell Biology}, Vol.~25, pp.
+  16760--16768, 6 2021.
 
 \end{thebibliography}
