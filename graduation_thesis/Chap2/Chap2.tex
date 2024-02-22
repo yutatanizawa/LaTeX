@@ -17,30 +17,45 @@ HPCシステムとは，スーパコンピュータやコンピュータクラ�
     \label{fig4}
 \end{figure}
 
-\subsection{Open Ondemand}
+\subsection{Open OnDemand}
 代表的な関連研究として，Open OnDemand(OOD)とその機能や設計構成を紹介する\cite{cite2}\cite{cite3}．OODは米国オハイオ・スーパーコンピューティングセンターが開発したオープンソースソフトウェアであり，ウェブインタフェースを介してHPCシステムを利用できる環境を提供する．ユーザはウェブブラウザ上でHPCクラスタを簡単に操作することができ，プラグインやほかのソフトウェアのインストールや設定は不要である．また，リモートデスクトップやjupyternotebook，VSCodeなどのグラフィカルな対話的操作もウェブブラウザ上から利用することができる．OODは世界的に使われている様々なジョブスケジューラ(PBS Pro，Slurm，Grid Engine，Torque，LSFなど)に対応しているためシステム間の利用方法の差異を隠蔽している．\par
-初めに，OODの機能について説明する．OODは，図\ref{fig1}に示すダッシュボードとユーザのディレクトリを管理するFilesアプリ，ジョブの管理を行うjobsアプリ，シェルの操作を行うClustersアプリ，開発者が任意の追加アプリを導入することができるinteractiveappsから構成される．図\ref{fig2}に示すfilesからはユーザのディレクトリをグラフィカルに操作することができ，ファイルやディレクトリの削除追加編集なども容易に行うことができる．図\ref{fig3}にはJobsのジョブ管理を行うJobComposerの画面を示す．ユーザはジョブの作成と投入削除などをすべてこの画面から行うことができる．また，JobsのActiveJobs画面からは投入したジョブの状態を確認することができ，HPCクラスタの様子をOODを介して把握することができる．また，Shellアプリからは連携したHPCクラスタのシェルをウェブブラウザ上から操作することができる．このように，OODは様々なアプリケーションと連携してHPCユーザの利用支援を行っている．\par
+初めに，OODの機能について説明する．OODは，図\ref{dashboard}に示すダッシュボードとユーザのディレクトリを管理するFilesアプリ，ジョブの管理を行うjobsアプリ，シェルの操作を行うClustersアプリ，開発者が任意の追加アプリを導入することができるinteractiveappsから構成される．図\ref{homedirectory}に示すfilesからはユーザのディレクトリをグラフィカルに操作することができ，ファイルやディレクトリの削除追加編集なども容易に行うことができる．図\ref{activejobs}にはジョブの状態確認を行うActive Jobs画面を示す．ユーザは投入したジョブの状態をリアルタイムで確認することができる．図\ref{jobcomposer}にはJobsのジョブ管理を行うJobComposerの画面を示す．ユーザはジョブの作成と投入削除などをすべてこの画面から行うことができる．図\ref{shell}には，shell画面を示す．ユーザは連携したHPCクラスタのシェルをウェブブラウザ上から操作することができる．このように，OODは様々なアプリケーションと連携してHPCユーザの利用支援を行っている．\par
 続いて，OODのの設計について説明する．OODは現在多様なジョブスケジューラに対応しているが，各ジョブスケジューラへの対応はadaptersディレクトリ下に配置される．指定したジョブスケジューラに対応するために，各々でAdapterクラスのサブクラスが宣言され，内部ではジョブスケジューラに合わせてジョブの投入を行うメソッドやジョブの削除を行うメソッド，ジョブの情報を取得するメソッドが再定義されている．対応するAdaoterファイルを呼び出して参照することでOODは多様なジョブスケジューラに対応することができている．\par
 
 \begin{figure}[tb]
     \centering
     \includegraphics[width=100mm]{./fig/dashboard.png}
     \caption{ダッシュボード画面}
-    \label{fig1}
+    \label{dashboard}
 \end{figure}
 
 \begin{figure}[tb]
     \centering
     \includegraphics[width=100mm]{./fig/homedirectory.png}
     \caption{ホームディレクトリ画面}
-    \label{fig2}
+    \label{homedirectory}
 \end{figure}
+
+\begin{figure}[tb]
+    \centering
+    \includegraphics[width=100mm]{./fig/activejobs.png}
+    \caption{ジョブ状態確認画面}
+    \label{activejobs}
+\end{figure}
+
 
 \begin{figure}[tb]
     \centering
     \includegraphics[width=100mm]{./fig/jobcomposer.png}
     \caption{ジョブ管理画面}
-    \label{fig3}
+    \label{jobcomposer}
+\end{figure}
+
+\begin{figure}[tb]
+    \centering
+    \includegraphics[width=100mm]{./fig/shell.png}
+    \caption{シェル画面}
+    \label{shell}
 \end{figure}
 
 \subsection{現行のウェブインタフェースにおける課題}

@@ -45,12 +45,42 @@ PSI/Jが対応している他のスケジューラ(Slurm，PBS Pro，LSF，Flux�
 具体的な実装をコード\ref{get_status_now}に示す．必要なライブラリのインポートや関数外の変数の宣言などは省略する．JobExecutorクラス内で定義されているget\_status\_nowメソッドはJobクラスのインスタンスを引数にとり，ジョブの状態を保持するJobStatusクラスを返り値に持つ．引数から受け取ったJobクラスのインスタンスからジョブのIDを抽出し，書くスケジューラごとに指定されているジョブの状態確認コマンドをジョブIDを指定して投げる．出力は行ごとにlinesに代入され，中身をforループでまわす．指定したIDのジョブがキューにない場合は「Batch Request: ジョブID does not exist on クラスタのホスト名.」という出力が帰ってくるため，この出力が取得され，cancel時に立つcancel\_fragが立っていればCANCELED状態にする．一方，この出力が取得され，cancel\_fragが立っていない場合は，キュー内部にジョブがないが，ジョブの削除が行われていないので，ジョブの状態はCOMPLETEDにする．また，ジョブの投入時に立つsubmit\_fragが立っていない場合はそもそもジョブの投入が成功していないので状態をFAILEDにする．なお，他のスケジューラではジョブ状態の詳細メッセージ出力される場合があるが，NQSVにはメッセージ出力機能がないためmessage変数はNoneとしている．\par
 このようにPSI/J自身がジョブの状態を管理することにより，さらに広い範囲のジョブスケジューラに対応することができることから，ジョブスケジューラ抽象化機能の汎用性を高めることができたといえる．\par
 
-\begin{lstlisting}[caption=ジョブの状態取得メソッド, label=dockerfile]
+\begin{lstlisting}[caption=ジョブの状態取得メソッド, label=get_status_now]
+from pathlib import Path
+from psij import Job, JobState, JobStatus
+from typing import List, Collection 
+from psij.executors.batch.batch_scheduler_executor 
+    import BatchSchedulerExecutor, check_status_exit_code
+
+import re
+import subprocess
+
 class NQSVJobExecutor(BatchSchedulerExecutor):
+
+    _STATE_MAP = {
+        'QUE': JobState.QUEUED,
+        'RUN': JobState.ACTIVE,
+        'WAT': JobState.QUEUED,
+        'HLD': JobState.QUEUED,
+        'SUS': JobState.QUEUED,
+        'ARI': JobState.QUEUED, #転送キューからの受信中
+        'TRS': JobState.QUEUED, #転送キューからの送信中
+        'EXT': JobState.ACTIVE, #実行結果ファイルの転送中
+        'PRR': JobState.QUEUED, #実行前処理中
+        'POR': JobState.ACTIVE, #実行後処理中
+        'MIG': JobState.QUEUED, #動的ジョブマイグレーションによるリクエスト移動中
+        'STG': JobState.QUEUED, 
+            #ジョブの生成中、およびステージイン対象ファイルの実行ホスト上への転送中
+    }
+
+    def get_status_command(self, native_ids: Collection[str]) -> List[str]:
+    return ['qstat', '-F', 'rid,stt', '-n', '-l'] + list(native_ids) 
+
     def get_status_now(self, job: Job) -> Job.status:
         native_ids = ''.join(str(job.native_id))
         command = ['qstat', '-F', 'rid,stt', '-n', '-l', native_ids]
-        out = subprocess.run(command, capture_output=True, text=True).stdout
+        out = 
+        subprocess.run(command, capture_output=True, text=True).stdout
         r = {}
         lines = iter(out.split('\n'))
 
@@ -99,12 +129,67 @@ class NQSVJobExecutor(BatchSchedulerExecutor):
                 r[native_id] = JobStatus(state=state, message=msg)
                 return r[native_id]
     
+    def _get_messsage(*args, **kwargs):  
+    return None
+    
+    def _get_state(self, state: str) -> JobState: 
+        assert state in NQSVJobExecutor._STATE_MAP
+        return NQSVJobExecutor._STATE_MAP[state]
 \end{lstlisting}
-\label{get_status_now}
+
 
 \subsubsection{ウェブ機能とスケジューラ抽象化機能との連携}
 続いて，ウェブ機能側であるOOD側からスケジューラ機能を用いることを考える．実装における問題点として，OODがRubyで実装されていることに対して，PSI/JはPythonで実装されているという点が挙げられる\cite{cite9}\cite{cite10}．そのため，Rubyスクリプト上でPythonライブラリを使用する必要がある．本実装ではPSI/Jを経由する際のオーバヘッドが小さく，単純な実装であるため，PSI/Jを用いたジョブの管理のためのPythonスクリプトをシェルを経由してRubyスクリプト上で直接実行する．この実装により，ウェブ機能としてOODを用い，スケジューラ抽象化機能であるPSI/Jを経由して，指定したスケジューラにジョブの投入や削除を行うことができる．また，PSI/Jを仲介することで，OODが未対応であったNQSVでのジョブ管理をOOD上から操作することを実現している．\par
+実装をコード\ref{psij_to_ood}に示す．PSI/Jと連携するためのアダプタファイルはOodCore/Job/Adapters空間内で定義され，AdapterスーパークラスのサブクラスとしてPSIJクラスを定義する．設定ファイルから，選択するAdapterとPSI/Jで用いるJobExecutorクラスの情報，ジョブを投入するHPCクラスタのホスト名が与えられる．initializeメソッド内では，与えられた情報をそれぞれインスタンス変数に代入する．submitメソッドでは，引数にジョブスクリプトの中身をとり，返り値に投入したジョブのIDを渡す．与えらえれたジョブスクリプトは一時的なジョブスクリプト保管用のディレクトリに保管され，scpコマンドを用いて，ユーザのホームディレクトリにPSI/Jを用いたジョブ投入用のpythonスクリプトsubmit\_script.pyを転送する．その後，ジョブ投入先のホストでJobExecutorと投入するジョブのパスを指定してsubmit\_script.pyを実行することでジョブが選択したホストに投入されるようになる．
 図2はOOD上でジョブを作成して投入と削除を行う「Job Composer」の画面である．ジョブを作成する際にクラスタを「psij」に設定することで，PSI/Jを経由してSlurmクラスタやNQSVクラスタなど任意のHPCシステムにジョブを投入できていることが確認できた．\par
+
+\begin{lstlisting}[caption=PSI/JとOODの連携, label=psij_to_ood]
+
+class PSIJ < Adapter
+  class Batch
+    def initialize(cluster: nil, bin: nil, conf: nil, bin_overrides: {}, 
+              submit_host: "", strict_host_checking: true, executor: nil)
+      @cluster              = cluster && cluster.to_s
+      @conf                 = conf    && Pathname.new(conf.to_s)
+      @bin                  = Pathname.new(bin.to_s)
+      @bin_overrides        = bin_overrides
+      @submit_host          = submit_host.to_s
+      @strict_host_checking = strict_host_checking
+      @executor             = executor
+    end
+
+  def submit(script, after: [], afterok: [], afternotok: [], afterany: [])
+    job_path = "/Temporary/Path/to/run.sh" 
+    file = File.open(job_path, "w")
+    file.puts(script.content.to_s)
+    file.close
+    scp_command = "sshpass -p 'password' scp /Path/to/submit_script.py 
+                  username@#{@psij.submit_host}:/Path/to/submit_script.py"
+    system(scp_command)
+    psij_submit = 
+    "python3 /Path/to/submit_script.py" 
+                          + " " + @psij.executor + " " + job_path
+    ssh_submit = 
+    "sshpass -p 'password' 
+                  ssh username@#{@psij.submit_host} '#{psij_submit}'"
+    o, e, s = Open3.capture3(ssh_submit)
+    return o
+  end
+  
+  def delete(id)
+    ids = id.to_s
+    scp_command = "sshpass -p 'password' scp /Path/to/delete_script.py 
+                  username@#{@psij.submit_host}:/Path/to/delete_script.py"
+    system(scp_command)
+    psij_delete = 
+    "python3 /ood_tmp/delete_script.py" + " " + @psij.executor + " " + ids
+    ssh_delete = 
+    "sshpass -p 'password' 
+                  ssh username@#{@psij.submit_host} '#{psij_delete}'"
+    system(ssh_delete)
+  end
+
+\end{lstlisting}
 
 \subsection{結言}
 本章では，ウェブインタフェースを介したHPCシステム利用環境の提案手法について説明し，その実装を行った．はじめに，提案手法の概要を説明した．その後，実装の概要，具体的な実装の手順について説明した．次章では，本章で実装した提案手法の性能評価を行い，提案手法の有用性を考察する．
