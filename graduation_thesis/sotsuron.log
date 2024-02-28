@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  22 FEB 2024 15:03
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  27 FEB 2024 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,14 +355,14 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 ]) [2]
 \openout2 = `Chap2/Chap2.aux'.
 
- (./Chap2/Chap2.tex
+ (./Chap2/Chap2.tex [3
+
+
+
+]
 File: ./fig/HPCsystem.png Graphic file (type bmp)
 <./fig/HPCsystem.png>
- [3
-
-
-
-] [4]
+ [4]
 File: ./fig/dashboard.png Graphic file (type bmp)
 <./fig/dashboard.png>
 File: ./fig/homedirectory.png Graphic file (type bmp)
@@ -373,23 +373,28 @@ File: ./fig/jobcomposer.png Graphic file (type bmp)
 <./fig/jobcomposer.png>
 File: ./fig/shell.png Graphic file (type bmp)
 <./fig/shell.png>
- [5] [6]) [7]
+ [5] [6] [7]) [8]
 \openout2 = `Chap3/Chap3.aux'.
 
  (./Chap3/Chap3.tex
 File: ./fig/conventional_method.png Graphic file (type bmp)
 <./fig/conventional_method.png>
- [8
+ [9
 
 
 
 ]
 File: ./fig/proposed_method.png Graphic file (type bmp)
 <./fig/proposed_method.png>
- [9]
+ [10]
 File: ./fig/environment.png Graphic file (type bmp)
 <./fig/environment.png>
- [10]
+ [11]
+Underfull \hbox (badness 1400) in paragraph at lines 45--45
+[]\JY1/mc/m/n/10 具体的な実装をコ ード \OT1/cmr/m/n/10 1 \JY1/mc/m/n/10 に示す ． \OT1/cmr/m/n/10 JobEx-ecu-tor \JY1/mc/m/n/10 クラス内で定義されている
+ []
+
+[12]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -398,36 +403,30 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 7.68799pt on input line 49.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 60.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <8> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 66.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 66.
-LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <8> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 66.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 66.
- [11]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 76.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 74.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 76.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
 
-Overfull \hbox (3.13841pt too wide) in paragraph at lines 76--77
+Overfull \hbox (3.13841pt too wide) in paragraph at lines 74--75
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[12] [13] [14]) [15]
+[13] [14]
+File: ./fig/PSIJ.yml.png Graphic file (type bmp)
+<./fig/PSIJ.yml.png>
+ [15] [16]) [17]
 \openout2 = `Chap4/Chap4.aux'.
 
- (./Chap4/Chap4.tex [16
+ (./Chap4/Chap4.tex [18
 
 
 
@@ -436,16 +435,17 @@ File: ./fig/ave_1-20.png Graphic file (type bmp)
 <./fig/ave_1-20.png>
 File: ./fig/ave_diff_1-20.png Graphic file (type bmp)
 <./fig/ave_diff_1-20.png>
+ [19]
 File: ./fig/100jobs.png Graphic file (type bmp)
 <./fig/100jobs.png>
- [17]) [18]
+ [20]) [21]
 \openout2 = `Chap5/Chap5.aux'.
 
- (./Chap5/Chap5.tex [19
+ (./Chap5/Chap5.tex [22
 
 
 
-]) [20] (./sotsuron.bbl
+]) [23] (./sotsuron.bbl
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -459,22 +459,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
 []\OT1/cmr/m/n/10 OpenOnDemand 3.0.3 Docuen-ta-tion.  $\OT1/cmtt/m/n/10 https : / / osc . github . io /
  []
 
-) [21
+) [24
 
 
 ]
 \openout2 = `Thank.aux'.
 
- (./Thank.tex) [22
+ (./Thank.tex) [25
 
 ] (./sotsuron.aux (./Chap1/Chap1.aux) (./Chap2/Chap2.aux) (./Chap3/Chap3.aux) (./Chap4/Chap4.aux) (./Chap5/Chap5.aux) (./Thank.aux)) ) 
 Here is how much of TeX's memory you used:
- 6681 strings out of 478741
- 105521 string characters out of 5860982
- 637552 words of memory out of 5000000
- 24946 multiletter control sequences out of 15000+600000
- 491503 words of font info for 124 fonts, out of 8000000 for 9000
+ 6687 strings out of 478741
+ 105647 string characters out of 5860982
+ 632552 words of memory out of 5000000
+ 24952 multiletter control sequences out of 15000+600000
+ 491151 words of font info for 123 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 67i,6n,77p,1213b,1886s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,8n,77p,2447b,1886s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (25 pages, 95612 bytes).
+Output written on sotsuron.dvi (28 pages, 105984 bytes).
