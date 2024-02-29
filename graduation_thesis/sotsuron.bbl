@@ -74,31 +74,6 @@
 \newblock {\em ISPA 2005: Parallel and Distributed Processing and
   Applications}, Vol. 3758, pp. 196--04, 2005.
 
-\bibitem{cite4}
-{Masahiro Nakao}, {Masaru Nagaku}, {Shinichi Miura}, {Hidetomo Kaneyama}, {Ikki
-  Fujiwara}, {Keiji Yamamoto}, and {Atsuko Takefusa}.
-\newblock {Introducing Open OnDemand to Supercomputer Fugaku.}
-\newblock {\em SC-W 2023}, pp. 720--727, 12 2023.
-
-\bibitem{cite5}
-{Mihael Hategan-Marandiuc}, {Andre Merzky}, {Nicholson Collier}, {Ketan
-  Maheshwari}, {Jonathan Ozik}, {Matteo Turilli}, {Andreas Wilke}, {Justin M.
-  Wozniak}, {Kyle Chard}, {Ian Foster}, {Rafael Ferreira da Silva}, {Shantenu
-  Jha}, and {Daniel Laney}.
-\newblock { PSI/J: A Portable Interface for Submitting, Monitoring, and
-  Managing Jobs.}
-\newblock {\em IEEE 19th International Conference on e-Science}, 2023.
-
-\bibitem{nqsv_scheduler}
-{NQSVスケジューラー}.
-\newblock
-  \url{https://www.nec.com/en/global/solutions/hpc/articles/tech08.html}.
-
-\bibitem{nqsv_introduction}
-{NEC Network Queuing System V (NQSV) 利用の手引き 導入編}.
-\newblock
-  \url{https://sxauroratsubasa.sakura.ne.jp/documents/nqsv/pdfs/g2ad01-NQSVUG-Introduction.pdf}.
-
 \bibitem{dex}
 {dexidp/dex: dex library.}
 \newblock \url{https://github.com/dexidp/dex}.
@@ -119,6 +94,38 @@
   Authentication Service (CAS) at Manado State Polytechnic}.
 \newblock {\em International Conference on Applied Science and Technology on
   Engineering Science}, pp. 698--702, 2022.
+
+\bibitem{cite4}
+{Masahiro Nakao}, {Masaru Nagaku}, {Shinichi Miura}, {Hidetomo Kaneyama}, {Ikki
+  Fujiwara}, {Keiji Yamamoto}, and {Atsuko Takefusa}.
+\newblock {Introducing Open OnDemand to Supercomputer Fugaku.}
+\newblock {\em SC-W 2023}, pp. 720--727, 12 2023.
+
+\bibitem{cite5}
+{Mihael Hategan-Marandiuc}, {Andre Merzky}, {Nicholson Collier}, {Ketan
+  Maheshwari}, {Jonathan Ozik}, {Matteo Turilli}, {Andreas Wilke}, {Justin M.
+  Wozniak}, {Kyle Chard}, {Ian Foster}, {Rafael Ferreira da Silva}, {Shantenu
+  Jha}, and {Daniel Laney}.
+\newblock { PSI/J: A Portable Interface for Submitting, Monitoring, and
+  Managing Jobs.}
+\newblock {\em IEEE 19th International Conference on e-Science}, 2023.
+
+\bibitem{aoba}
+{高橋 慧智}, {藤本 壮也}{長瀬 悟}, {磯部 洋子}, {下村 陽一}, {江川 隆輔}, {滝沢
+  寛之}.
+\newblock {ベクトル型スーパーコンピュータ「AOBA-S」の性能評価}.
+\newblock 研究報告ハイパフォーマンスコンピューティング（HPC）, Vol.~1, No. 191,
+  pp. 1--9, 9 2023.
+
+\bibitem{nqsv_scheduler}
+{NQSVスケジューラー}.
+\newblock
+  \url{https://www.nec.com/en/global/solutions/hpc/articles/tech08.html}.
+
+\bibitem{nqsv_introduction}
+{NEC Network Queuing System V (NQSV) 利用の手引き 導入編}.
+\newblock
+  \url{https://sxauroratsubasa.sakura.ne.jp/documents/nqsv/pdfs/g2ad01-NQSVUG-Introduction.pdf}.
 
 \bibitem{cite7}
 {OpenOnDemand 3.0.3 Docuentation.}
