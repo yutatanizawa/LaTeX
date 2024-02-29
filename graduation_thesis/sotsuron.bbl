@@ -135,6 +135,19 @@
 {install Open OnDemand | Open OnDemand.}
 \newblock \url{https://openondemand.org/install-open-ondemand}.
 
+\bibitem{Flux}
+{Dong H. Ahn}, {Jim Garlick} ans {Mark Grondona}, {Don Lipari}, {Becky
+  Springmeyer}, and {Martin Schulz}.
+\newblock {Flux: A Next-Generation Resource Management Framework for Large HPC
+  Centers}.
+\newblock {\em 2014 43rd International Conference on Parallel Processing
+  Workshops}, 2014.
+
+\bibitem{Cobalt}
+{Narayan Desai}.
+\newblock {FlCobalt: an open source platform for hpc system software research}.
+\newblock {\em Edinburgh BG/L System Software Workshop}, 2005.
+
 \bibitem{nqsv_reference}
 {NEC Network Queuing System V (NQSV) 利用の手引き リファレンス編}.
 \newblock
