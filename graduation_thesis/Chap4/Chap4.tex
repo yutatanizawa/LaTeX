@@ -55,25 +55,25 @@
 
 \begin{figure}[tb]
     \centering
-    \includegraphics[width=100mm]{./fig/ave_1-20.png}
+    \includegraphics[width=120mm]{./fig/ave_1-20.png}
     \caption{機能分離前後でのターンアラウンドタイムの比較}
     \label{fig8}
 \end{figure}
   
 \begin{figure}[tb]
     \centering
-    \includegraphics[width=100mm]{./fig/ave_diff_1-20.png}
+    \includegraphics[width=120mm]{./fig/ave_diff_1-20.png}
     \caption{実行時オーバーヘッドの差}
     \label{fig9}
 \end{figure}
 
 
-ジョブを1～100回連続投入した際の機能分離前後でのターンアラウンドタイムの評価結果を図\ref{fig10}に示す．横軸は連続して投入したジョブの数，縦軸はターンアラウンドタイムを示す．1～10回の連続投入の場合と同じく，PSI/Jを経由した場合の方がわずかにターンアラウンドタイムが大きくなっており，連続投入するジョブ数を大きくしても極端にオーバヘッドに差が出ることはないということがわかった．\par
+ジョブを1～100回連続投入した際の機能分離前と機能分離後のターンアラウンドタイムの評価結果を図\ref{fig10}に示す．横軸は連続して投入したジョブの数，縦軸はターンアラウンドタイムを示す．1～10回の連続投入の場合と同じく，PSI/Jを経由した場合の方がわずかにターンアラウンドタイムが大きくなっており，連続投入するジョブ数を大きくしても極端にオーバヘッドに差が出ることはないということがわかった．\par
 様々なジョブの連続投入回数でのターンアラウンドタイムの結果から，ジョブ実行時のオーバヘッドを測定した．その結果から，ジョブの連続投入回数に依らず，PSI/Jを経由した場合のオーバヘッドは，PSI/Jを経由しない場合のターンアラウンドタイムの5％以内に収まり，提案手法によって生じるオーバヘッドは十分無視できるといえる．\par
 
 \begin{figure}[tb]
     \centering
-    \includegraphics[width=100mm]{./fig/100jobs.png}
+    \includegraphics[width=120mm]{./fig/100jobs.png}
     \caption{ジョブ数を増加した際のターンアラウンドタイムの比較}
     \label{fig10}
 \end{figure}

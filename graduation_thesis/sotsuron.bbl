@@ -7,6 +7,21 @@
   Accounts: A Solution for HPC Hosted Courses.}
 \newblock {\em IEICE TRANS. INF. SYST}, No.~9, pp. 2307--2314, 9 2018.
 
+\bibitem{OOD_1}
+{Alan Chalker}, {Eric Franz}, {Morgan Rodgers}, and {Trey Dockendorf}.
+\newblock {Open OnDemand:State of the platform, project, and the future}.
+\newblock {\em Concurrency and Computation: Practice and Experience}, 2021.
+
+\bibitem{kei}
+{宮崎 博行}, {草野 義博}{新庄 直樹}, {庄司 文由}, {横川 三津夫}, {渡邊 貞}.
+\newblock {スーパーコンピュータ「京」の概要}.
+\newblock {\em FUJITSU}, Vol.~3, No.~63, pp. 237--246, 2012.
+
+\bibitem{hugaku}
+{杉原 英治}.
+\newblock {スーパーコンピュータ「富岳」の本格運用}.
+\newblock 電気学会誌, Vol.~2, No. 141, p. 104, 2021.
+
 \bibitem{cite2}
 {David E. Hudak}, {Thomas Bitterman}, {Patricia Carey}, {Douglas Johnson},
   {Eric Franz}, {Shaun Brady}, and {Piyush Diwan}.
@@ -19,6 +34,45 @@
   and {David Hudak}.
 \newblock {Open OnDemand: HPC for Everyone.}
 \newblock {\em ISC 2019 Workshops}, Vol. 11887, pp. 504--513, 12 2019.
+
+\bibitem{jupyternotebook}
+{Bernadette M. Randles}, {Irene V. Pasquetto}, {Milena S. Golshan}, and
+  {Christine L. Borgman}.
+\newblock {Using the Jupyter Notebook as a Tool for Open Science: An Empirical
+  Study}.
+\newblock {\em 2017 ACM/IEEE Joint Conference on Digital Libraries (JCDL)}, pp.
+  1--2, 2017.
+
+\bibitem{PBS_Pro}
+{Bill Nitzberg}, {Jennifer M. Schopf}, and {James Patton Jones}.
+\newblock {PBS PRO: GRID COMPUTING AND SCHEDULING ATTRIBUTES}.
+\newblock {\em Grid Resource Management. International Series in Operations
+  Research and Management Science}, Vol.~64, pp. 183--190, 2021.
+
+\bibitem{Slurm}
+{Andy B. Yoo}, {Morris A. Jette}, and {Mark Grondona}.
+\newblock {SLURM: Simple Linux Utility for Resource Management}.
+\newblock {\em JSSP (Job Scheduling Strategies for Parallel Processing)}, pp.
+  44--60, 2003.
+
+\bibitem{Grid_Engine}
+{W. Gentzsch}.
+\newblock {Sun Grid Engine: towards creating a compute power grid}.
+\newblock {\em Proceedings First IEEE/ACM International Symposium on Cluster
+  Computing and the Grid}, pp. 35--36, 2001.
+
+\bibitem{TORQUE}
+{Dalibor Klusacek}, {Vaclav Chlumsky}, and {Hana Rudova}.
+\newblock {Planning and Optimization in TORQUE Resource Manager}.
+\newblock {\em HPDC '15: Proceedings of the 24th International Symposium on
+  High-Performance Parallel and Distributed Computing}, pp. 203--206, 6 2015.
+
+\bibitem{LSF}
+{Xiaohui Wei}, {Wilfred W. Li}, {Osamu Tatebe}, {Gaochao Xu}, {Liang Hu}, and
+  {Jiubin Ju}.
+\newblock {Integrating Local Job Scheduler - LSF with Gfarm}.
+\newblock {\em ISPA 2005: Parallel and Distributed Processing and
+  Applications}, Vol. 3758, pp. 196--04, 2005.
 
 \bibitem{cite4}
 {Masahiro Nakao}, {Masaru Nagaku}, {Shinichi Miura}, {Hidetomo Kaneyama}, {Ikki
@@ -35,6 +89,37 @@
   Managing Jobs.}
 \newblock {\em IEEE 19th International Conference on e-Science}, 2023.
 
+\bibitem{nqsv_scheduler}
+{NQSVスケジューラー}.
+\newblock
+  \url{https://www.nec.com/en/global/solutions/hpc/articles/tech08.html}.
+
+\bibitem{nqsv_introduction}
+{NEC Network Queuing System V (NQSV) 利用の手引き 導入編}.
+\newblock
+  \url{https://sxauroratsubasa.sakura.ne.jp/documents/nqsv/pdfs/g2ad01-NQSVUG-Introduction.pdf}.
+
+\bibitem{dex}
+{dexidp/dex: dex library.}
+\newblock \url{https://github.com/dexidp/dex}.
+
+\bibitem{openidconnect}
+{Sven Hammann}, {Ralf Sasse}, and {David Basin}.
+\newblock {Privacy-Preserving OpenID Connect}.
+\newblock {\em ASIA CCS '20}, pp. 277--289, 10 2020.
+
+\bibitem{shibboleth}
+{Francis Jayakanth}, {AnandaT. Byrappa}, and {Raja Visvanathan}.
+\newblock {Off-campus Access to Licensed Online Resources through Shibboleth}.
+\newblock {\em Information Technology and Libraries}, Vol.~40, , 6 2021.
+
+\bibitem{CAS}
+{Marike Kondoj}, {Tineke Saroinsong}, and {Anritsu Polii}.
+\newblock {Single Sign On (SSO) System with Application of Central
+  Authentication Service (CAS) at Manado State Polytechnic}.
+\newblock {\em International Conference on Applied Science and Technology on
+  Engineering Science}, pp. 698--702, 2022.
+
 \bibitem{cite7}
 {OpenOnDemand 3.0.3 Docuentation.}
 \newblock \url{https://osc.github.io/ood-documentation/latest/}.
@@ -42,6 +127,11 @@
 \bibitem{cite8}
 {install Open OnDemand | Open OnDemand.}
 \newblock \url{https://openondemand.org/install-open-ondemand}.
+
+\bibitem{nqsv_reference}
+{NEC Network Queuing System V (NQSV) 利用の手引き リファレンス編}.
+\newblock
+  \url{https://sxauroratsubasa.sakura.ne.jp/documents/nqsv/pdfs/g2ad04-NQSVUG-Reference.pdf}.
 
 \bibitem{cite9}
 {OSC/ood-core: Open OnDemand core library.}
