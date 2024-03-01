@@ -9,6 +9,8 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces 提案手法の模式図\relax }}{14}{}%
 \contentsline {figure}{\numberline {10}{\ignorespaces 実装環境\relax }}{15}{}%
 \contentsline {figure}{\numberline {11}{\ignorespaces NQSV対応時のジョブの状態遷移図\relax }}{18}{}%
-\contentsline {figure}{\numberline {12}{\ignorespaces 機能分離前後でのターンアラウンドタイムの比較\relax }}{24}{}%
-\contentsline {figure}{\numberline {13}{\ignorespaces 実行時オーバーヘッドの差\relax }}{25}{}%
-\contentsline {figure}{\numberline {14}{\ignorespaces ジョブ数を増加した際のターンアラウンドタイムの比較\relax }}{25}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces 評価環境\relax }}{24}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces 機能分離前後での単一ジョブ実行によるターンアラウンドタイム\relax }}{25}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces 機能分離前後でのターンアラウンドタイムの比較\relax }}{26}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces 機能分離によるオーバヘッド\relax }}{27}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces ジョブ数を増加した際のターンアラウンドタイムの比較\relax }}{27}{}%

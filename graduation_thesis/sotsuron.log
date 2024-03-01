@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  1 MAR 2024 10:29
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.5.31)  1 MAR 2024 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -383,7 +383,12 @@ File: ./fig/shell.png Graphic file (type bmp)
 <./fig/shell.png>
 File: ./fig/class_diagram.png Graphic file (type bmp)
 <./fig/class_diagram.png>
- [6]
+
+Overfull \hbox (18.96852pt too wide) in paragraph at lines 76--77
+ [][] 
+ []
+
+[6]
 File: ./fig/conventional_method.png Graphic file (type bmp)
 <./fig/conventional_method.png>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
@@ -445,20 +450,26 @@ Overfull \hbox (3.13841pt too wide) in paragraph at lines 113--114
 
 
 ]
-File: ./fig/ave_1-20.png Graphic file (type bmp)
-<./fig/ave_1-20.png>
-File: ./fig/ave_diff_1-20.png Graphic file (type bmp)
-<./fig/ave_diff_1-20.png>
+File: ./fig/evaluation_environment.png Graphic file (type bmp)
+<./fig/evaluation_environment.png>
+ [24]
+File: ./fig/boxplot.png Graphic file (type bmp)
+<./fig/boxplot.png>
+File: ./fig/1-10jobs.png Graphic file (type bmp)
+<./fig/1-10jobs.png>
+File: ./fig/1-10_overhead.png Graphic file (type bmp)
+<./fig/1-10_overhead.png>
+ [25]
 File: ./fig/100jobs.png Graphic file (type bmp)
 <./fig/100jobs.png>
- [24] [25]) [26]
+) [26] [27]
 \openout2 = `Chap5/Chap5.aux'.
 
- (./Chap5/Chap5.tex [27
+ (./Chap5/Chap5.tex [28
 
 
 
-]) [28] (./sotsuron.bbl
+]) [29] (./sotsuron.bbl
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -467,7 +478,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 8.
- [29
+ [30
 
 
 ]
@@ -480,7 +491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
 \OT1/cmr/m/n/10 .  $\OT1/cmtt/m/n/10 https : / / sxauroratsubasa . sakura . ne . jp / documents / nqsv / pdfs /
  []
 
-[30]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 135--137
 []\OT1/cmr/m/n/10 OpenOnDemand 3.0.3 Docuen-ta-tion.  $\OT1/cmtt/m/n/10 https : / / osc . github . io /
  []
@@ -495,19 +506,19 @@ Underfull \hbox (badness 4913) in paragraph at lines 156--159
 \JY1/mc/m/n/10 ンス編\OT1/cmr/m/n/10 .  $\OT1/cmtt/m/n/10 https : / / sxauroratsubasa . sakura . ne . jp / documents / nqsv / pdfs /
  []
 
-) [31]
+) [32]
 \openout2 = `Thank.aux'.
 
- (./Thank.tex) [32
+ (./Thank.tex) [33
 
 ] (./sotsuron.aux (./Chap1/Chap1.aux) (./Chap2/Chap2.aux) (./Chap3/Chap3.aux) (./Chap4/Chap4.aux) (./Chap5/Chap5.aux) (./Thank.aux)) ) 
 Here is how much of TeX's memory you used:
- 6737 strings out of 478741
- 106362 string characters out of 5860982
+ 6751 strings out of 478741
+ 106702 string characters out of 5860982
  644552 words of memory out of 5000000
- 24999 multiletter control sequences out of 15000+600000
+ 25011 multiletter control sequences out of 15000+600000
  491879 words of font info for 125 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 67i,8n,77p,2417b,1778s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,11n,77p,2420b,1778s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (35 pages, 132284 bytes).
+Output written on sotsuron.dvi (36 pages, 138760 bytes).

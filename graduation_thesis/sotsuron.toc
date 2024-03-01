@@ -18,9 +18,10 @@
 \contentsline {subsection}{\numberline {3.4}結言}{22}{}%
 \contentsline {section}{\numberline {第4章}実装評価}{23}{}%
 \contentsline {subsection}{\numberline {4.1}緒言}{23}{}%
-\contentsline {subsection}{\numberline {4.2}評価環境}{23}{}%
-\contentsline {subsection}{\numberline {4.3}評価条件}{23}{}%
-\contentsline {subsection}{\numberline {4.4}実行時オーバヘッドの評価}{24}{}%
-\contentsline {subsection}{\numberline {4.5}結言}{25}{}%
-\contentsline {section}{\numberline {第5章}結論}{27}{}%
-\contentsline {section}{参考文献}{29}{}%
+\contentsline {subsection}{\numberline {4.2}動作確認}{23}{}%
+\contentsline {subsection}{\numberline {4.3}評価環境}{23}{}%
+\contentsline {subsection}{\numberline {4.4}評価条件}{24}{}%
+\contentsline {subsection}{\numberline {4.5}実行時オーバヘッドの評価}{24}{}%
+\contentsline {subsection}{\numberline {4.6}結言}{26}{}%
+\contentsline {section}{\numberline {第5章}結論}{28}{}%
+\contentsline {section}{参考文献}{30}{}%
