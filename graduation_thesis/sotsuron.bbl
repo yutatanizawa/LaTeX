@@ -43,6 +43,10 @@
 \newblock {\em 2017 ACM/IEEE Joint Conference on Digital Libraries (JCDL)}, pp.
   1--2, 2017.
 
+\bibitem{VSCode}
+{Documentation for Visual Studio Code}.
+\newblock \url{https://code.visualstudio.com/docs}.
+
 \bibitem{PBS_Pro}
 {Bill Nitzberg}, {Jennifer M. Schopf}, and {James Patton Jones}.
 \newblock {PBS PRO: GRID COMPUTING AND SCHEDULING ATTRIBUTES}.
